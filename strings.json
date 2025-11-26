@@ -1,0 +1,5 @@
+{
+  "SDK_ONGOING_LOOP_ERROR": "Error in AI onGoing behavior: {}",
+  "SDK_EVENT_HANDLER_ERROR": "Error in event handler: {}",
+  "SDK_SCOREBOARD_COLUMNS_ERROR": "Scoreboard: Invalid number of columns. Expected 1-5, got {}."
+}
