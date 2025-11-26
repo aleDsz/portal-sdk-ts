@@ -1,11 +1,10 @@
 import { GameObject } from "../game_object";
 
 export class SpatialObject extends GameObject {
-  protected _native: mod.SpatialObject;
+  protected declare _native: mod.SpatialObject;
 
   private constructor(native: mod.SpatialObject) {
     super(native);
-    this._native = native;
   }
 
   public static fromNative(native: mod.SpatialObject): SpatialObject {

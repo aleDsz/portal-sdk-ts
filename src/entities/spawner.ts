@@ -3,11 +3,10 @@ import { GameObject } from "../game_object";
 import { AIPlayer } from "./ai_player";
 
 export class Spawner extends GameObject {
-  protected _native: mod.Spawner;
+  protected declare _native: mod.Spawner;
 
   private constructor(native: mod.Spawner) {
     super(native);
-    this._native = native;
   }
 
   public static create(

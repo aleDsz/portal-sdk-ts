@@ -3,11 +3,10 @@ import { GameObject } from "../game_object";
 import { Objective } from "./objective";
 
 export class Sector extends Objective {
-  protected _native: mod.Sector;
+  protected declare _native: mod.Sector;
 
   private constructor(native: mod.Sector) {
     super(native);
-    this._native = native;
   }
 
 

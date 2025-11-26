@@ -5,11 +5,10 @@ import { Squad } from "./squad";
 import { Scoreboard } from "../scoreboard";
 
 export class Team extends GameObject {
-  protected _native: mod.Team;
+  protected declare _native: mod.Team;
 
   private constructor(native: mod.Team) {
     super(native);
-    this._native = native;
   }
 
   public static fromNative(native: mod.Team): Team {

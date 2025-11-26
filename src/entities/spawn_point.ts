@@ -2,11 +2,10 @@ import { Event } from "../event";
 import { GameObject } from "../game_object";
 
 export class SpawnPoint extends GameObject {
-  protected _native: mod.SpawnPoint;
+  protected declare _native: mod.SpawnPoint;
 
   private constructor(native: mod.SpawnPoint) {
     super(native);
-    this._native = native;
   }
 
   public static create(

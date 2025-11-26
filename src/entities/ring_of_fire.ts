@@ -2,11 +2,10 @@ import { Event } from "../event";
 import { GameObject } from "../game_object";
 
 export class RingOfFire extends GameObject {
-  protected _native: mod.RingOfFire;
+  protected declare _native: mod.RingOfFire;
 
   private constructor(native: mod.RingOfFire) {
     super(native);
-    this._native = native;
   }
 
   public static create(

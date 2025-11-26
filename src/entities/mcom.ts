@@ -3,11 +3,10 @@ import { GameObject } from "../game_object";
 import { Objective } from "./objective";
 
 export class MCOM extends Objective {
-  protected _native: mod.MCOM;
+  protected declare _native: mod.MCOM;
 
   private constructor(native: mod.MCOM) {
     super(native);
-    this._native = native;
   }
 
   public static create(

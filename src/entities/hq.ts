@@ -3,11 +3,10 @@ import { GameObject } from "../game_object";
 import { Objective } from "./objective";
 
 export class HQ extends Objective {
-  protected _native: mod.HQ;
+  protected declare _native: mod.HQ;
 
   private constructor(native: mod.HQ) {
     super(native);
-    this._native = native;
   }
 
   public static create(

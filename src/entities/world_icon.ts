@@ -2,11 +2,10 @@ import { Event } from "../event";
 import { GameObject } from "../game_object";
 
 export class WorldIcon extends GameObject {
-  protected _native: mod.WorldIcon;
+  protected declare _native: mod.WorldIcon;
 
   private constructor(native: mod.WorldIcon) {
     super(native);
-    this._native = native;
   }
 
   public static create(

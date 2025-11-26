@@ -3,11 +3,10 @@ import { GameObject } from "../game_object";
 import { Player } from "./player";
 
 export class InteractPoint extends GameObject {
-  protected _native: mod.InteractPoint;
+  protected declare _native: mod.InteractPoint;
 
   private constructor(native: mod.InteractPoint) {
     super(native);
-    this._native = native;
   }
 
   public static create(

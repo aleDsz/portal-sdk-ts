@@ -4,11 +4,10 @@ import { Objective } from "./objective";
 import { Player } from "./player";
 
 export class CapturePoint extends Objective {
-  protected _native: mod.CapturePoint;
+  protected declare _native: mod.CapturePoint;
 
   private constructor(native: mod.CapturePoint) {
     super(native);
-    this._native = native;
   }
 
   public static create(

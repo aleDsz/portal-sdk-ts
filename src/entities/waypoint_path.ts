@@ -2,11 +2,10 @@ import { Event } from "../event";
 import { GameObject } from "../game_object";
 
 export class WaypointPath extends GameObject {
-  protected _native: mod.WaypointPath;
+  protected declare _native: mod.WaypointPath;
 
   private constructor(native: mod.WaypointPath) {
     super(native);
-    this._native = native;
   }
 
   public static create(

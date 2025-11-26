@@ -1,11 +1,10 @@
 import { GameObject } from "../game_object";
 
 export class SFX extends GameObject {
-  protected _native: mod.SFX;
+  protected declare _native: mod.SFX;
 
   protected constructor(native: mod.SFX) {
     super(native);
-    this._native = native;
   }
 
   public static fromNative(native: mod.SFX): SFX {

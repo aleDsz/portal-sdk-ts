@@ -3,11 +3,10 @@ import { GameObject } from "../game_object";
 import { Player } from "./player";
 
 export class Vehicle extends GameObject {
-  protected _native: mod.Vehicle;
+  protected declare _native: mod.Vehicle;
 
   protected constructor(native: mod.Vehicle) {
     super(native);
-    this._native = native;
   }
 
   public static fromNative(native: mod.Vehicle): Vehicle {

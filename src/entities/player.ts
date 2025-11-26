@@ -12,13 +12,13 @@ import { Team } from "./team";
 import { Vehicle } from "./vehicle";
 
 export class Player extends GameObject {
-  protected _native: mod.Player;
+  protected declare _native: mod.Player;
   public readonly inputRestrictions: InputRestrictions;
   public readonly inventory: InventoryManager;
 
   protected constructor(native: mod.Player) {
     super(native);
-    this._native = native;
+
     this.inputRestrictions = new InputRestrictions(this);
     this.inventory = new InventoryManager(this);
   }

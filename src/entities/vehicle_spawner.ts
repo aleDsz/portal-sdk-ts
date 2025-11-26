@@ -2,11 +2,10 @@ import { Event } from "../event";
 import { GameObject } from "../game_object";
 
 export class VehicleSpawner extends GameObject {
-  protected _native: mod.VehicleSpawner;
+  protected declare _native: mod.VehicleSpawner;
 
   private constructor(native: mod.VehicleSpawner) {
     super(native);
-    this._native = native;
   }
 
   public static create(

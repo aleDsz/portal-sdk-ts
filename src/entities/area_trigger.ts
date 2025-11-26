@@ -3,11 +3,10 @@ import { GameObject } from "../game_object";
 import { Player } from "./player";
 
 export class AreaTrigger extends GameObject {
-  protected _native: mod.AreaTrigger;
+  protected declare _native: mod.AreaTrigger;
 
   private constructor(native: mod.AreaTrigger) {
     super(native);
-    this._native = native;
   }
 
   public static create(
