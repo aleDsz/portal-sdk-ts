@@ -1,4 +1,7 @@
 {
+  "name": "portal-sdk-ts",
+  "version": "1.1.2.0",
+  "description": "Battlefield 6 Portal SDK",
   "scripts": {
     "build": "bf6mod build"
   },
