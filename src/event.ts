@@ -18,10 +18,10 @@ export class Event<T extends (...args: any[]) => any> {
     }
   }
 
-  public async dispatch(...args: Parameters<T>): Promise<void> {
+  public dispatch(...args: Parameters<T>): void {
     for (const handler of this.handlers) {
       try {
-        await handler(...args);
+        handler(...args);
       } catch (error: any) {
         mod.SendErrorReport(mod.Message(mod.stringkeys.SDK_EVENT_HANDLER_ERROR, error.message));
       }

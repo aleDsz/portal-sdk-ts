@@ -74,7 +74,7 @@ export abstract class AIManager {
 
     while (mod.IsPlayerValid(player.native) && player.isAlive) {
       try {
-        await personality.behavior.onGoing!(player);
+        personality.behavior.onGoing!(player);
       } catch (error: any) {
         mod.SendErrorReport(mod.Message(mod.stringkeys.SDK_ONGOING_LOOP_ERROR, error.message));
         mod.SendErrorReport(mod.Message(mod.stringkeys.SDK_ONGOING_LOOP_ERROR, error.message));

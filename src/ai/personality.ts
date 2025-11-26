@@ -18,10 +18,10 @@ export interface AIOptions {
  * Defines the behavior contract for an AI, with methods for lifecycle events.
  */
 export interface AIBehavior {
-  onSpawn(player: AIPlayer): void | Promise<void>;
-  onDamaged(player: AIPlayer, damager: Player, damage: number, weapon: mod.WeaponUnlock): void | Promise<void>;
-  onDeath(player: AIPlayer, killer: Player, deathType: mod.DeathType, weapon: mod.WeaponUnlock): void | Promise<void>;
-  onGoing?(player: AIPlayer): void | Promise<void>;
+  onSpawn(player: AIPlayer): void;
+  onDamaged(player: AIPlayer, damager: Player, damage: number, weapon: mod.WeaponUnlock): void;
+  onDeath(player: AIPlayer, killer: Player, deathType: mod.DeathType, weapon: mod.WeaponUnlock): void;
+  onGoing?(player: AIPlayer): void;
 }
 
 /**
