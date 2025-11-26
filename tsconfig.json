@@ -4,6 +4,14 @@
     "lib": [
       "es2017"
     ],
+    "types": [
+      "./lib/types"
+    ],
+    "paths": {
+      "modlib": [
+        "./lib/modlib"
+      ]
+    },
     "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
