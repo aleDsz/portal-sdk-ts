@@ -19,13 +19,13 @@ export namespace Portal {
   export import GameObject = GameObjectModule.GameObject;
 
   // Entities
-  export import Entities = EntitiesModule;
+  export import Entities = EntitiesModule.Entities;
 
   // Game controller
   export import Game = GameModule.Game;
 
   // AI System
-  export import AI = AIModule;
+  export import AI = AIModule.AI;
 
   // Inventory and Weapons
   export import Weapon = WeaponModule.Weapon;
@@ -38,7 +38,7 @@ export namespace Portal {
   export import Music = MusicModule.Music;
 
   // UI
-  export import UI = UIModule;
+  export import UI = UIModule.UI;
 
   // Types
   export type RuntimeSpawnable = TypesModule.RuntimeSpawnable;
